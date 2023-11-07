@@ -1,6 +1,6 @@
 ﻿.campo{
     padding: 5px;
 }
-.campo label{
-    float: left;
+.campo input{
+    float: right;
 }
