@@ -9,3 +9,28 @@ img{
 .subtitle h2{
     padding: 30px 5px;
 }
+#mapAMDGPU{ 
+    height:800px;
+    width: 80%;
+    margin:auto;
+}
+#mapIntelGPU{ 
+    height:800px;
+    width: 80%;
+    margin:auto;
+}
+#mapNVIDIAGPU{ 
+    height:800px;
+    width: 80%;
+    margin:auto;
+}
+#mapAMDCPU{ 
+    height:800px;
+    width: 80%;
+    margin:auto;
+}
+#mapIntelCPU{ 
+    height:800px;
+    width: 80%;
+    margin:auto;
+}
