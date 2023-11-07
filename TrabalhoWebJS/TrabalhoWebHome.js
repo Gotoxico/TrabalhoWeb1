@@ -43,6 +43,15 @@ var markerNamibia = L.marker([-23.3, 17.3]).addTo(map);
 var markerRussia = L.marker([64.6, 97.8]).addTo(map);
 var markerIran = L.marker([32.5, 54.5]).addTo(map);
 var markerJapan = L.marker([36.55, 139.25]).addTo(map);
+var markerCanada = L.marker([62.2, -105.3]).addTo(map);
+var markerIsrael = L.marker([31, 34.8]).addTo(map);
+var markerPoland = L.marker([51.9, 19.1]).addTo(map);
+var markerCostaRica = L.marker([9.6, -84.2]).addTo(map);
+var markerVietnam = L.marker([15.9, 105.8]).addTo(map);
+var markerIreland = L.marker([53.4, -8.3]).addTo(map);
+var markerTaiwan = L.marker([23.5, 121]).addTo(map);
+var markerSingapore = L.marker([1.3, 103.8]).addTo(map);
+var markerSouthKorea = L.marker([35.8, 127]).addTo(map);
 
 //Colocar linhas de rota//
 
@@ -253,6 +262,105 @@ markerJapan.on('click', function(e){
   var polylineJapan = L.polyline(Japan, {color: 'red'}).addTo(map);
   
   map.fitBounds(polylineJapan.getBounds());
+})
+
+markerCanada.on('click', function(e) { 
+  var Canada = [
+  [-22.121265, -51.383400],
+  [62.2, -105.3]
+];
+
+let polylineCanada = L.polyline(Canada, {color: 'red'}).addTo(map);
+
+map.fitBounds(polylineCanada.getBounds()); 
+})
+
+markerIsrael.on('click', function(e) { 
+  var Israel = [
+  [-22.121265, -51.383400],
+  [31, 34.8]
+];
+
+let polylineIsrael = L.polyline(Israel, {color: 'red'}).addTo(map);
+
+map.fitBounds(polylineIsrael.getBounds()); 
+})
+
+markerPoland.on('click', function(e) { 
+  var Poland = [
+  [-22.121265, -51.383400],
+  [51.9, 19.1]
+];
+
+let polylinePoland = L.polyline(Poland, {color: 'red'}).addTo(map);
+
+map.fitBounds(polylinePoland.getBounds()); 
+})
+
+markerCostaRica.on('click', function(e) { 
+  var CostaRica = [
+  [-22.121265, -51.383400],
+  [9.6, -84.2]
+];
+
+let polylineCostaRica = L.polyline(CostaRica, {color: 'red'}).addTo(map);
+
+map.fitBounds(polylineCostaRica.getBounds()); 
+})
+
+markerVietnam.on('click', function(e) { 
+  var Vietnam = [
+  [-22.121265, -51.383400],
+  [15.9, 105.8]
+];
+
+let polylineVietnam = L.polyline(Vietnam, {color: 'red'}).addTo(map);
+
+map.fitBounds(polylineVietnam.getBounds()); 
+})
+
+markerIreland.on('click', function(e) { 
+  var Ireland = [
+  [-22.121265, -51.383400],
+  [53.4, -8.3]
+];
+
+let polylineIreland = L.polyline(Ireland, {color: 'red'}).addTo(map);
+
+map.fitBounds(polylineIreland.getBounds()); 
+})
+
+markerTaiwan.on('click', function(e) { 
+  var Taiwan = [
+  [-22.121265, -51.383400],
+  [23.5, 121]
+];
+
+let polylineTaiwan = L.polyline(Taiwan, {color: 'red'}).addTo(map);
+
+map.fitBounds(polylineTaiwan.getBounds()); 
+})
+
+markerSingapore.on('click', function(e) { 
+  var Singapore = [
+  [-22.121265, -51.383400],
+  [1.3, 103.8]
+];
+
+let polylineSingapore = L.polyline(Singapore, {color: 'red'}).addTo(map);
+
+map.fitBounds(polylineSingapore.getBounds()); 
+})
+
+markerSouthKorea.on('click', function(e) { 
+  var SouthKorea = [
+  [-22.121265, -51.383400],
+  [35.8, 127]
+];
+
+let polylineSouthKorea = L.polyline(SouthKorea, {color: 'red'}).addTo(map);
+
+map.fitBounds(polylineSouthKorea.getBounds()); 
 })
 
 //Botão no mapa para localização user//
