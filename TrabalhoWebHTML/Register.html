@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../TrabalhoWebCSS/TrabalhoWebGeral.css">
+    <link rel="stylesheet" href="../TrabalhoWebCSS/Register.css">
+</head>
+<body class="background">
+    <script src="../TrabalhoWebJS/Register.js"></script>
+    <h1 class="center">Cadastrar usuário</h1>
+    <div class="colorazure" style="margin:auto;">
+        <div class="campo">
+            <label for="username">Nome:</label>
+            <input class="direita" type="text" id="username" name="username">
+        </div>
+        <div class="campo">
+            <label for="cpf">CPF:</label>
+            <input class="direita" type="text" id="cpf">
+        </div>
+        <div class="campo">
+            <label for="senha">Senha:</label>
+            <input class="direita" type="password" id="senha">    
+        </div>
+        <div class="campo">
+            <label for="nascimento">Data de Nascimento:</label>
+            <input class="direita" type="date" id="nascimento">
+        </div>
+        <div class="campo">
+            <label for="idade">idade:</label>
+            <input class="direita" type="number" id="idade" name="idade">
+        </div>
+        <div class="campo">
+            <label for="placa">Placa de vídeo atual:</label>
+            <select id="placa" name="placa" class="direita">
+                <option>NVIDIA</option>
+                <option>AMD</option>
+                <option>INTEL</option>
+            </select>
+        </div>
+        <div class="campo">
+            <label for="cpu">Processador atual:</label>
+            <select id="cpu" name="cpu" class="direita">
+                <option>INTEL</option>
+                <option>AMD</option>
+            </select>
+        </div>
+        <div class="campo">
+            <label for="usuario">Cores primárias para roxo:</label>
+            <input type="checkbox">Azul
+            <input type="checkbox">Vermelho
+            <input type="checkbox">Amarelo
+        </div>
+
+        <div class="campo">
+            <label for="cor">Selecione cor favorita:</label>
+            <input class="direita" type="color">
+        </div>
+
+        <div class="campo">
+            <label for="sexo">Sexo:</label>
+            <div class="direita">
+                <input type="radio" name="sexo">Masculino
+                <input type="radio" name="sexo">Feminino
+            </div>     
+        </div>
+        <div class="campo">
+            <input type="submit" onclick="validar_cadastro(cpf)">
+        </div>
+        <a href="./Login.html" class="direita colorazure">Login</a>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <footer class="center">
+        <ul type="none" class="colorazure">
+            <li>1/3 GCOMP</li>
+        </ul>
+    </footer>
+</body>
+</html>
