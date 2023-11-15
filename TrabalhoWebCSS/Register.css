@@ -1,6 +1,68 @@
 .campo{
     padding: 5px;
+    text-align: center;
 }
-.direita{
-    float: right;
+.input{
+    margin: 6px 0px 0px 0px;
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+#cadastro{
+    width: 30%;
+}
+.select{
+    width: 80%;
+    text-align: center;
+    height: 30px;
+    border-radius: 10px;
+    margin: 6px 0px 0px 0px;
+}
+#cor_fav{
+    width: 20%;
+    height: 45px;
+    margin: 6px 0px 0px 0px;
+    border-radius: 10px;
+}
+.box{
+    margin: 6px 0px 0px 0px;
+    width: 30px;
+    padding: 5px;
+}
+#submit_cadastro{
+    width: 60%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 3px;
+}
+input:hover{
+    background-color: azure;
+    opacity: 50%;
+}
+input:focus{
+    background-color: azure;
+    opacity: 100%;
+}
+select:hover{
+    background-color: azure;
+    opacity: 50%;
+}
+select:focus{
+    background-color: azure;
+    opacity: 100%;
+}
+#link:hover{
+    color: azure;
+    opacity: 50%;
+}
+input[type='checkbox']{
+    width: 20px;
+    height: 20px;
+    margin: 10px 5px 0px 0px;
+}
+input[type='radio']{
+    width: 20px;
+    height: 20px;
+    margin: 10px 5px 0px 0px;
 }

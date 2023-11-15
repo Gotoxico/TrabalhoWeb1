@@ -10,66 +10,81 @@
 <body class="background">
     <script src="../TrabalhoWebJS/Register.js"></script>
     <h1 class="center">Cadastrar usuário</h1>
-    <div class="colorazure" style="margin:auto;">
+    <form class="colorazure" style="margin:auto;" id="cadastro">
         <div class="campo">
-            <label for="username">Nome:</label>
-            <input class="direita" type="text" id="username" name="username">
+            <label for="username">Login</label><br>
+            <input required="" class="input" type="text" id="username" name="username">
         </div>
         <div class="campo">
-            <label for="cpf">CPF:</label>
-            <input class="direita" type="text" id="cpf">
+            <label for="senha">Senha</label><br>
+            <input required="" class="input" type="password" id="senha" name="senha">    
         </div>
         <div class="campo">
-            <label for="senha">Senha:</label>
-            <input class="direita" type="password" id="senha">    
+            <label for="senhaC">Confirme a senha</label><br>
+            <input required="" class="input" type="password" id="senhaC" name="senhaC">    
         </div>
         <div class="campo">
-            <label for="nascimento">Data de Nascimento:</label>
-            <input class="direita" type="date" id="nascimento">
+            <label for="cpf">CPF</label><br>
+            <input class="input" type="text" id="cpf" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" placeholder="000.000.000-00">
         </div>
         <div class="campo">
-            <label for="idade">idade:</label>
-            <input class="direita" type="number" id="idade" name="idade">
+            <label for="nascimento">Data de Nascimento</label><br>
+            <input class="input" type="date" id="nascimento">
         </div>
         <div class="campo">
-            <label for="placa">Placa de vídeo atual:</label>
-            <select id="placa" name="placa" class="direita">
+            <label for="idade">Idade</label><br>
+            <input class="input" type="number" id="idade" name="idade" min="0" max="130">
+        </div>
+        <br>
+        <div class="campo">
+            <label for="placa">Placa de vídeo atual</label><br>
+            <select id="placa" class="select" name="placa">
                 <option>NVIDIA</option>
                 <option>AMD</option>
                 <option>INTEL</option>
             </select>
         </div>
         <div class="campo">
-            <label for="cpu">Processador atual:</label>
-            <select id="cpu" name="cpu" class="direita">
+            <label for="cpu">Processador atual</label><br>
+            <select id="cpu" class="select" name="cpu">
                 <option>INTEL</option>
                 <option>AMD</option>
             </select>
         </div>
-        <div class="campo">
-            <label for="usuario">Cores primárias para roxo:</label>
-            <input type="checkbox">Azul
-            <input type="checkbox">Vermelho
-            <input type="checkbox">Amarelo
+
+        <div>
+            <div class="campo">
+                <br>
+                <label for="sexo">Sexo</label><br>
+            </div>
+            <div>
+                <input class="box" type="radio" name="sexo">Masculino
+                <br>
+                <input class="box" type="radio" name="sexo">Feminino
+                <br>
+                <input class="box" type="radio" name="sexo">Outro
+                <br><br>
+            </div>    
         </div>
 
         <div class="campo">
-            <label for="cor">Selecione cor favorita:</label>
-            <input class="direita" type="color">
+            <label for="cor">Selecione sua cor favorita</label><br>
+            <input type="color" id="cor_fav">
         </div>
-
+        <br><br>
         <div class="campo">
-            <label for="sexo">Sexo:</label>
-            <div class="direita">
-                <input type="radio" name="sexo">Masculino
-                <input type="radio" name="sexo">Feminino
-            </div>     
+            <label for="usuario">Satisfação com o site</label><br>
+            <input class="box" type="checkbox">Baixa
+            <input class="box" type="checkbox">Média
+            <input class="box" type="checkbox">Alta
         </div>
+        <br><br>
         <div class="campo">
-            <input type="submit" onclick="validar_cadastro(cpf)">
+            <input id="submit_cadastro" value="Cadastrar" type="submit" onclick="validar_cadastro(cpf)">
         </div>
-        <a href="./Login.html" class="direita colorazure">Login</a>
-    </div>
+        <br>
+        <a id="link" href="./Login.html" class="direita colorazure">Login</a>
+    </form>
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
