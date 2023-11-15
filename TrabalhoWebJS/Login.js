@@ -7,7 +7,7 @@ function validar_login(validator){
         window.location.href="../TrabalhoWebHTML/TrabalhoWebHome.html"
     }
     else{
-        alert("Falhou")
+        alert("Login inválido!")
     }
 
 }

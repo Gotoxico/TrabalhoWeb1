@@ -9,27 +9,29 @@
 <script language="javascript" src="../TrabalhoWebJS/Login.js" type="text/javascript"></script>
 
 <h1 class="center">Login</h1>
-<div class="colorazure" style="margin:auto;">
+<div id="cadastro" class="colorazure" style="margin:auto;">
     <div class="campo">
-        <label for="username">Nome:</label>
-        <input class="direita" type="text" id="username" name="username">
+        <label for="username">Login:</label>
+        <input required="" class="input" type="text" id="username" name="username">
     </div>
     <div class="campo">
         <label for="senha">Senha:</label>
-        <input class="direita" type="password" id="senha" id="senha">    
+        <input required="" class="input" type="password" id="senha" id="senha">    
     </div>
     <div class="campo">
         <label for="validacao">Hora atual:</label>
-        <input class="direita" type="time" id="validacao" name="validacao">
+        <input class="input" type="time" id="validacao" name="validacao">
     </div>
     <div class="campo">
         <label for="idade">idade:</label>
-        <input class="direita" type="number" id="idade" name="idade">
+        <input class="input" type="number" id="idade" name="idade" min="0" max="130">
     </div>
+    <br><br>
     <div class="campo">
-        <input type="submit" onclick="validar_login(validacao)">
+        <input value="Entrar" id="submit_login" type="submit" onclick="validar_login(validacao)">
     </div>
-    <a href="./Register.html" class="direita colorazure">Cadastrar</a>
+    <br><br>
+    <a id="link" href="./Register.html" class="direita colorazure">Cadastrar</a>
 </div>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
