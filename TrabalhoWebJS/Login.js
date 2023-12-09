@@ -1,15 +1,12 @@
-function validar_login(validator){
-    let validacao = validator.value
-    let atual = new Date()
-    let hora_atual = atual.getHours() + ":" + atual.getMinutes()
+function validar_login(){
+    let login = document.getElementById('username').value;
+    let senha = document.getElementById('senha').value;
 
-    if(validacao === hora_atual){
+    if(login != "" && senha != ""){
         window.location.href="../TrabalhoWebHTML/TrabalhoWebHome.html"
+    }else{
+        alert('Login invalido');
     }
-    else{
-        alert("Login inválido!")
-    }
-
 }
 
 
